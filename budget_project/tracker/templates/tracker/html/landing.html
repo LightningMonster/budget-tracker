@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker Landing Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Budget Tracker</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Your Financial Dashboard</h2>
+                <p>Track your expenses, manage your budget, and achieve your financial goals.</p>
+            </section>
+            <section>
+                <h3>Get Started</h3>
+                <p>Sign up or log in to start tracking your finances today!</p>
+                <a href="{% url 'signup' %}" class="btn-signup">Sign Up</a>
+                <a href="{% url 'login' %}" class="btn-login">Log In</a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Budget Tracker. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+
+</html>
