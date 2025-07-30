@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Budget Tracker{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body style="background: url('{% static 'images/bg.png' %}') no-repeat center center fixed; background-size: cover;">
+
+    <div class="container">
+        {% block content %}
+        <!-- Child Templates will inject content here -->
+        {% endblock %}
+        
+        <footer>
+            <p>&copy; 2023 Budget Tracker. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
